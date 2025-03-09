@@ -1,0 +1,13 @@
+<div class="filter">
+    <h3>{{ filterType | titlecase }}</h3>
+    <ul>
+      <li *ngFor="let value of filterValues">
+        <button 
+          [class.selected]="selectedFilter === value"
+          (click)="onSelect(value)">
+          {{ value }}
+        </button>
+      </li>
+    </ul>
+  </div>
+  
