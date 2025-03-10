@@ -1,0 +1,21 @@
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of filteredProducts" class="custom-table-row">
+      <td>{{ product.name }}</td>
+      <td>{{ product.gender }}</td>
+      <td>{{ product.category }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr *ngIf="filteredProducts.length === 0">
+      <td colspan="3">There are no products to show</td>
+    </tr>
+  </tfoot>
+</table>

@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'product-list',
   imports: [CommonModule],
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.scss',
+  styleUrls: ['./product-list.component.scss'],
   standalone: true
 })
 export class ProductListComponent {

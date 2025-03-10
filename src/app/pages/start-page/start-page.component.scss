@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  width: 350px; /* Fixed width for filters */
+  margin-right: 20px; /* Space between columns */
+}
+
+.right-side {
+  flex-grow: 1; /* Take remaining space for products */
+}

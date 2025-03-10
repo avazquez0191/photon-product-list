@@ -1,0 +1,23 @@
+<header>
+    <h1>Products List</h1>
+</header>
+
+<main class="main">
+    <div class="container">
+      <div class="left-side">
+        <filter
+          [filterType]="gender"
+          [filterValues]="genders"
+          (onFilterChange)="handleFilterChange($event, gender)">
+        </filter>
+        <filter
+          [filterType]="category"
+          [filterValues]="categories"
+          (onFilterChange)="handleFilterChange($event, category)">
+        </filter>
+      </div>
+      <div class="right-side">
+        <product-list [selectedFilters]="selectedFilters" [products]="products"></product-list>
+      </div>
+    </div>
+  </main>

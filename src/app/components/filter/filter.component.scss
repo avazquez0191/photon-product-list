@@ -1,0 +1,29 @@
+.filter {
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &.selected {
+      background-color: #006400; // dark green
+      color: white;
+      border-color: #006400; // dark green
+    }
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
